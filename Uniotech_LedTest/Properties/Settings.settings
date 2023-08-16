@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Uniotech_LedTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CH1_VALUE" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">1080</Value>
+    </Setting>
+    <Setting Name="CH2_VALUE" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="CH3_VALUE" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">1497</Value>
+    </Setting>
+    <Setting Name="CH4_VALUE" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="CH1_PF_MIN" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">121</Value>
+    </Setting>
+    <Setting Name="CH1_PF_MAX" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">189</Value>
+    </Setting>
+    <Setting Name="CH2_PF_MIN" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">28.8</Value>
+    </Setting>
+    <Setting Name="CH2_PF_MAX" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">33</Value>
+    </Setting>
+    <Setting Name="CH3_PF_MIN" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">174</Value>
+    </Setting>
+    <Setting Name="CH3_PF_MAX" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">241.5</Value>
+    </Setting>
+    <Setting Name="CH4_PF_MIN" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">61</Value>
+    </Setting>
+    <Setting Name="CH4_PF_MAX" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">90.3</Value>
+    </Setting>
+    <Setting Name="CH1_PF_ERROR" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+    <Setting Name="CH2_PF_ERROR" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+    <Setting Name="CH3_PF_ERROR" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+    <Setting Name="CH4_PF_ERROR" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
