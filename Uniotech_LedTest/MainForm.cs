@@ -424,7 +424,18 @@ namespace Uniotech_LedTest
                 case 0x00:
                     break;
                 case 0x01:
-                    ADCResultParser(data);
+                    switch(cmd3)
+                    {
+                        case 0x01:
+                            ADCResultParser(data);
+                            break;
+                        case 0x02:
+                            ADCMode3ResultParser(data);
+                            break;
+                    }
+                    break;
+                case 0x02:
+                    
                     break;
             }
         }
@@ -457,6 +468,11 @@ namespace Uniotech_LedTest
             textBoxADCCh.Text = adc.CH == 0x00 ? "MONIT" : "RECEV";
             textBoxADCSps.Text = comboBoxSPS.Items[adc.SPS].ToString();
             textBoxADCSamples.Text = adc.SAMPLES.ToString();
+        }
+
+        private void ADCMode3ResultParser(byte[] data)
+        {
+
         }
 
         private void ADCResultParser(byte[] data) // result
