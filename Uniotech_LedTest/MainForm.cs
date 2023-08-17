@@ -472,7 +472,15 @@ namespace Uniotech_LedTest
 
         private void ADCMode3ResultParser(byte[] data)
         {
+            BToFloat b2f;
+            b2f.fVal = 0;
 
+            b2f.b4 = data[3];
+            b2f.b3 = data[2];
+            b2f.b2 = data[1];
+            b2f.b1 = data[0];
+
+            targetTextBox.Text = b2f.fVal.ToString("0,000");
         }
 
         private void ADCResultParser(byte[] data) // result
