@@ -11,6 +11,7 @@ using System.IO.Ports;
 using Uniotech_LedTest.SubClass;
 using static Uniotech_LedTest.SubClass.ZergEggParser;
 using System.IO;
+using System.Threading;
 
 namespace Uniotech_LedTest
 {
@@ -100,7 +101,7 @@ namespace Uniotech_LedTest
         {
             StreamWriter sw = CreateExcelInstance(mode2FileName);
 
-            if(textBoxMode2Ch3Result.Text.Length == 0)
+            if(textBoxMode2Ch0Result.Text.Length == 0)
             {
                 MessageBox.Show("측정되지 않았습니다. 확인해주세요.");
                 return;
@@ -119,8 +120,8 @@ namespace Uniotech_LedTest
 
             String appendText =
                 DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "," + sn + "," +
-                textBoxMode2Ch3Result.Text + "," + textBoxMode2Ch2Result.Text + "," +
                 textBoxMode2Ch0Result.Text + "," + textBoxMode2Ch1Result.Text + "," +
+                textBoxMode2Ch2Result.Text + "," + textBoxMode2Ch3Result.Text + "," +
                 result;
 
             sw.WriteLine(appendText);
@@ -219,25 +220,25 @@ namespace Uniotech_LedTest
 
         private void DisplayInit()
         {
-            numericUpDownCh1Setting.Value = Properties.Settings.Default.CH1_VALUE;
-            numericUpDownCh2Setting.Value = Properties.Settings.Default.CH2_VALUE;
-            numericUpDownCh3Setting.Value = Properties.Settings.Default.CH3_VALUE;
-            numericUpDownCh4Setting.Value = Properties.Settings.Default.CH4_VALUE;
+            numericUpDownCh0Setting.Value = Properties.Settings.Default.CH1_VALUE;
+            numericUpDownCh1Setting.Value = Properties.Settings.Default.CH2_VALUE;
+            numericUpDownCh2Setting.Value = Properties.Settings.Default.CH3_VALUE;
+            numericUpDownCh3Setting.Value = Properties.Settings.Default.CH4_VALUE;
 
-            numericUpDownPFCH1Min.Value = (decimal)Properties.Settings.Default.CH1_PF_MIN;
-            numericUpDownPFCH2Min.Value = (decimal)Properties.Settings.Default.CH2_PF_MIN;
-            numericUpDownPFCH3Min.Value = (decimal)Properties.Settings.Default.CH3_PF_MIN;
-            numericUpDownPFCH4Min.Value = (decimal)Properties.Settings.Default.CH4_PF_MIN;
+            numericUpDownPFCH0Min.Value = (decimal)Properties.Settings.Default.CH1_PF_MIN;
+            numericUpDownPFCH1Min.Value = (decimal)Properties.Settings.Default.CH2_PF_MIN;
+            numericUpDownPFCH2Min.Value = (decimal)Properties.Settings.Default.CH3_PF_MIN;
+            numericUpDownPFCH3Min.Value = (decimal)Properties.Settings.Default.CH4_PF_MIN;
 
-            numericUpDownPFCH1Max.Value = (decimal)Properties.Settings.Default.CH1_PF_MAX;
-            numericUpDownPFCH2Max.Value = (decimal)Properties.Settings.Default.CH2_PF_MAX;
-            numericUpDownPFCH3Max.Value = (decimal)Properties.Settings.Default.CH3_PF_MAX;
-            numericUpDownPFCH4Max.Value = (decimal)Properties.Settings.Default.CH4_PF_MAX;
+            numericUpDownPFCH0Max.Value = (decimal)Properties.Settings.Default.CH1_PF_MAX;
+            numericUpDownPFCH1Max.Value = (decimal)Properties.Settings.Default.CH2_PF_MAX;
+            numericUpDownPFCH2Max.Value = (decimal)Properties.Settings.Default.CH3_PF_MAX;
+            numericUpDownPFCH3Max.Value = (decimal)Properties.Settings.Default.CH4_PF_MAX;
 
-            numericUpDownPFCH1Error.Value = (decimal)Properties.Settings.Default.CH1_PF_ERROR;
-            numericUpDownPFCH2Error.Value = (decimal)Properties.Settings.Default.CH2_PF_ERROR;
-            numericUpDownPFCH3Error.Value = (decimal)Properties.Settings.Default.CH3_PF_ERROR;
-            numericUpDownPFCH4Error.Value = (decimal)Properties.Settings.Default.CH4_PF_ERROR;
+            numericUpDownPFCH0Error.Value = (decimal)Properties.Settings.Default.CH1_PF_ERROR;
+            numericUpDownPFCH1Error.Value = (decimal)Properties.Settings.Default.CH2_PF_ERROR;
+            numericUpDownPFCH2Error.Value = (decimal)Properties.Settings.Default.CH3_PF_ERROR;
+            numericUpDownPFCH3Error.Value = (decimal)Properties.Settings.Default.CH4_PF_ERROR;
 
             comboBoxADCCh.SelectedIndex = 0;
             comboBoxSPS.SelectedIndex = 0;
@@ -458,7 +459,7 @@ namespace Uniotech_LedTest
             textBoxADCSamples.Text = adc.SAMPLES.ToString();
         }
 
-        private void ADCResultParser(byte[] data)
+        private void ADCResultParser(byte[] data) // result
         {
             int chCnt = (data.Length) / 5;
 
@@ -482,10 +483,10 @@ namespace Uniotech_LedTest
 
                 int ch = data[i * 5];
                 String targetName = textBoxName + ch + "Result";
-                b2f.b4 = data[i * 5 + 1];
-                b2f.b3 = data[i * 5 + 2];
-                b2f.b2 = data[i * 5 + 3];
-                b2f.b1 = data[i * 5 + 4];
+                b2f.b4 = data[i * 5 + 4];
+                b2f.b3 = data[i * 5 + 3];
+                b2f.b2 = data[i * 5 + 2];
+                b2f.b1 = data[i * 5 + 1];
 
                 float value = b2f.fVal;
 
@@ -495,9 +496,9 @@ namespace Uniotech_LedTest
                 {
                     control.Text = value.ToString("0.000");
 
-                    float min = (float)((NumericUpDown)Controls.Find("numericUpDownPFCH" + ch + "Min", true).FirstOrDefault()).Value;
-                    float max = (float)((NumericUpDown)Controls.Find("numericUpDownPFCH" + ch + "Max", true).FirstOrDefault()).Value;
-                    float err = (float)((NumericUpDown)Controls.Find("numericUpDownPFCH" + ch + "Error", true).FirstOrDefault()).Value;
+                    float min = -(float)((NumericUpDown)Controls.Find("numericUpDownPFCH" + ch + "Min", true).FirstOrDefault()).Value;
+                    float max = -(float)((NumericUpDown)Controls.Find("numericUpDownPFCH" + ch + "Max", true).FirstOrDefault()).Value;
+                    float err = -(float)((NumericUpDown)Controls.Find("numericUpDownPFCH" + ch + "Error", true).FirstOrDefault()).Value;
 
                     min = min - err;
                     max = max + err;
@@ -564,19 +565,19 @@ namespace Uniotech_LedTest
 
             if (checkBoxCh1.Checked == true) // Blue
             {
-                seqList.Add(new Sequence(3, (UInt16)numericUpDownCh1Setting.Value, 0.0f));
+                seqList.Add(new Sequence(0, (UInt16)numericUpDownCh0Setting.Value, 0.0f));
             }
             if (checkBoxCh2.Checked == true) // Green
             {
-                seqList.Add(new Sequence(2, (UInt16)numericUpDownCh2Setting.Value, 0.0f));
+                seqList.Add(new Sequence(1, (UInt16)numericUpDownCh1Setting.Value, 0.0f));
             }
             if (checkBoxCh3.Checked == true) // Red
             {
-                seqList.Add(new Sequence(0, (UInt16)numericUpDownCh3Setting.Value, 0.0f));
+                seqList.Add(new Sequence(2, (UInt16)numericUpDownCh2Setting.Value, 0.0f));
             }
             if (checkBoxCh4.Checked == true) // Orange
             {
-                seqList.Add(new Sequence(1, (UInt16)numericUpDownCh4Setting.Value, 0.0f));
+                seqList.Add(new Sequence(3, (UInt16)numericUpDownCh3Setting.Value, 0.0f));
             }
 
             SendMeasSetting(seqList);
@@ -621,12 +622,14 @@ namespace Uniotech_LedTest
 
             seqList = new List<Sequence>();
 
+            seqList.Add(new Sequence(0, (UInt16)numericUpDownCh0Setting.Value, 0.0f));
             seqList.Add(new Sequence(1, (UInt16)numericUpDownCh1Setting.Value, 0.0f));
             seqList.Add(new Sequence(2, (UInt16)numericUpDownCh2Setting.Value, 0.0f));
             seqList.Add(new Sequence(3, (UInt16)numericUpDownCh3Setting.Value, 0.0f));
-            seqList.Add(new Sequence(4, (UInt16)numericUpDownCh4Setting.Value, 0.0f));
 
             SendMeasSetting(seqList);
+
+            Thread.Sleep(10);
 
             SendData(0x02, 0x01, 0x01, new byte[1] { 0x00 }, 1);
 
@@ -640,15 +643,15 @@ namespace Uniotech_LedTest
 
         private void InitMode1()
         {
-            textBoxMode1Ch3Result.Text = "";
-            textBoxMode1Ch2Result.Text = "";
             textBoxMode1Ch0Result.Text = "";
             textBoxMode1Ch1Result.Text = "";
+            textBoxMode1Ch2Result.Text = "";
+            textBoxMode1Ch3Result.Text = "";
 
-            textBoxMode1Ch3Result.BackColor = SystemColors.Control;
-            textBoxMode1Ch2Result.BackColor = SystemColors.Control;
             textBoxMode1Ch0Result.BackColor = SystemColors.Control;
             textBoxMode1Ch1Result.BackColor = SystemColors.Control;
+            textBoxMode1Ch2Result.BackColor = SystemColors.Control;
+            textBoxMode1Ch3Result.BackColor = SystemColors.Control;
         }
 
         private void buttonMode2Clear_Click(object sender, EventArgs e)
@@ -659,15 +662,15 @@ namespace Uniotech_LedTest
         private void InitMode2()
         {
             textBoxMode2Time.Text = "";
-            textBoxMode2Ch3Result.Text = "";
-            textBoxMode2Ch2Result.Text = "";
             textBoxMode2Ch0Result.Text = "";
             textBoxMode2Ch1Result.Text = "";
+            textBoxMode2Ch2Result.Text = "";
+            textBoxMode2Ch3Result.Text = "";
 
-            textBoxMode2Ch3Result.BackColor = SystemColors.Control;
-            textBoxMode2Ch2Result.BackColor = SystemColors.Control;
             textBoxMode2Ch0Result.BackColor = SystemColors.Control;
             textBoxMode2Ch1Result.BackColor = SystemColors.Control;
+            textBoxMode2Ch2Result.BackColor = SystemColors.Control;
+            textBoxMode2Ch3Result.BackColor = SystemColors.Control;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -771,10 +774,10 @@ namespace Uniotech_LedTest
 
         private void buttonDACSet_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.CH1_VALUE = (short)numericUpDownCh1Setting.Value;
-            Properties.Settings.Default.CH2_VALUE = (short)numericUpDownCh2Setting.Value;
-            Properties.Settings.Default.CH3_VALUE = (short)numericUpDownCh3Setting.Value;
-            Properties.Settings.Default.CH4_VALUE = (short)numericUpDownCh4Setting.Value;
+            Properties.Settings.Default.CH1_VALUE = (short)numericUpDownCh0Setting.Value;
+            Properties.Settings.Default.CH2_VALUE = (short)numericUpDownCh1Setting.Value;
+            Properties.Settings.Default.CH3_VALUE = (short)numericUpDownCh2Setting.Value;
+            Properties.Settings.Default.CH4_VALUE = (short)numericUpDownCh3Setting.Value;
 
             Properties.Settings.Default.Save();
         }
@@ -813,20 +816,20 @@ namespace Uniotech_LedTest
 
         private void buttonTFSet_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.CH1_PF_MIN = (float)numericUpDownPFCH1Min.Value;
-            Properties.Settings.Default.CH2_PF_MIN = (float)numericUpDownPFCH2Min.Value;
-            Properties.Settings.Default.CH3_PF_MIN = (float)numericUpDownPFCH3Min.Value;
-            Properties.Settings.Default.CH4_PF_MIN = (float)numericUpDownPFCH4Min.Value;
+            Properties.Settings.Default.CH1_PF_MIN = (float)numericUpDownPFCH0Min.Value;
+            Properties.Settings.Default.CH2_PF_MIN = (float)numericUpDownPFCH1Min.Value;
+            Properties.Settings.Default.CH3_PF_MIN = (float)numericUpDownPFCH2Min.Value;
+            Properties.Settings.Default.CH4_PF_MIN = (float)numericUpDownPFCH3Min.Value;
 
             Properties.Settings.Default.CH1_PF_MAX = (float)Properties.Settings.Default.CH1_PF_MAX;
             Properties.Settings.Default.CH2_PF_MAX = (float)Properties.Settings.Default.CH2_PF_MAX;
             Properties.Settings.Default.CH3_PF_MAX = (float)Properties.Settings.Default.CH3_PF_MAX;
             Properties.Settings.Default.CH4_PF_MAX = (float)Properties.Settings.Default.CH4_PF_MAX;
 
-            Properties.Settings.Default.CH1_PF_ERROR = (float)numericUpDownPFCH1Error.Value;
-            Properties.Settings.Default.CH2_PF_ERROR = (float)numericUpDownPFCH2Error.Value;
-            Properties.Settings.Default.CH3_PF_ERROR = (float)numericUpDownPFCH3Error.Value;
-            Properties.Settings.Default.CH4_PF_ERROR = (float)numericUpDownPFCH4Error.Value;
+            Properties.Settings.Default.CH1_PF_ERROR = (float)numericUpDownPFCH0Error.Value;
+            Properties.Settings.Default.CH2_PF_ERROR = (float)numericUpDownPFCH1Error.Value;
+            Properties.Settings.Default.CH3_PF_ERROR = (float)numericUpDownPFCH2Error.Value;
+            Properties.Settings.Default.CH4_PF_ERROR = (float)numericUpDownPFCH3Error.Value;
 
             Properties.Settings.Default.Save();
         }
@@ -839,7 +842,7 @@ namespace Uniotech_LedTest
                 return;
             }
 
-            if (textBoxMode2Ch3Result.Text.Length == 0)
+            if (textBoxMode2Ch0Result.Text.Length == 0)
             {
                 MessageBox.Show("측정 결과가 없습니다.");
                 return;
@@ -847,32 +850,33 @@ namespace Uniotech_LedTest
 
             float[] value = new float[4];
 
-            value[0] = float.Parse(textBoxMode2Ch3Result.Text);
-            value[1] = float.Parse(textBoxMode2Ch2Result.Text);
-            value[2] = float.Parse(textBoxMode2Ch0Result.Text);
-            value[3] = float.Parse(textBoxMode2Ch1Result.Text);
+            value[0] = float.Parse(textBoxMode2Ch0Result.Text);
+            value[1] = float.Parse(textBoxMode2Ch1Result.Text);
+            value[2] = float.Parse(textBoxMode2Ch2Result.Text);
+            value[3] = float.Parse(textBoxMode2Ch3Result.Text);
 
             float[] minValue = new float[4];
 
-            minValue[0] = (float)numericUpDownPFCH1Min.Value;
-            minValue[1] = (float)numericUpDownPFCH2Min.Value;
-            minValue[2] = (float)numericUpDownPFCH3Min.Value;
-            minValue[3] = (float)numericUpDownPFCH4Min.Value;
+            minValue[0] = (float)numericUpDownPFCH0Min.Value;
+            minValue[1] = (float)numericUpDownPFCH1Min.Value;
+            minValue[2] = (float)numericUpDownPFCH2Min.Value;
+            minValue[3] = (float)numericUpDownPFCH3Min.Value;
 
             float[] maxValue = new float[4];
 
-            maxValue[0] = (float)numericUpDownPFCH1Max.Value;
-            maxValue[1] = (float)numericUpDownPFCH2Max.Value;
-            maxValue[2] = (float)numericUpDownPFCH3Max.Value;
-            maxValue[3] = (float)numericUpDownPFCH4Max.Value;
+            maxValue[0] = (float)numericUpDownPFCH0Max.Value;
+            maxValue[1] = (float)numericUpDownPFCH1Max.Value;
+            maxValue[2] = (float)numericUpDownPFCH2Max.Value;
+            maxValue[3] = (float)numericUpDownPFCH3Max.Value;
 
             float[] errValue = new float[4];
-            errValue[0] = (float)numericUpDownPFCH1Error.Value;
-            errValue[1] = (float)numericUpDownPFCH2Error.Value;
-            errValue[2] = (float)numericUpDownPFCH3Error.Value;
-            errValue[3] = (float)numericUpDownPFCH4Error.Value;
+            errValue[0] = (float)numericUpDownPFCH0Error.Value;
+            errValue[1] = (float)numericUpDownPFCH1Error.Value;
+            errValue[2] = (float)numericUpDownPFCH2Error.Value;
+            errValue[3] = (float)numericUpDownPFCH3Error.Value;
 
             WriteToExcelMode2(textBoxSn.Text, value, minValue, maxValue, errValue);
+
         }
 
         private void button2_Click(object sender, EventArgs e)

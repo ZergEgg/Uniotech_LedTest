@@ -31,13 +31,13 @@
             this.comboBoxPorts = new System.Windows.Forms.ComboBox();
             this.buttonConn = new System.Windows.Forms.Button();
             this.buttonMode1Clear = new System.Windows.Forms.Button();
-            this.textBoxMode1Ch1Result = new System.Windows.Forms.TextBox();
+            this.textBoxMode1Ch3Result = new System.Windows.Forms.TextBox();
             this.buttonMeasurementMode1 = new System.Windows.Forms.Button();
             this.buttonIndRun = new System.Windows.Forms.Button();
-            this.textBoxMode1Ch0Result = new System.Windows.Forms.TextBox();
-            this.textBoxMode1Ch3Result = new System.Windows.Forms.TextBox();
-            this.checkBoxCh1 = new System.Windows.Forms.CheckBox();
             this.textBoxMode1Ch2Result = new System.Windows.Forms.TextBox();
+            this.textBoxMode1Ch0Result = new System.Windows.Forms.TextBox();
+            this.checkBoxCh1 = new System.Windows.Forms.CheckBox();
+            this.textBoxMode1Ch1Result = new System.Windows.Forms.TextBox();
             this.checkBoxCh2 = new System.Windows.Forms.CheckBox();
             this.checkBoxCh3 = new System.Windows.Forms.CheckBox();
             this.checkBoxCh4 = new System.Windows.Forms.CheckBox();
@@ -45,11 +45,11 @@
             this.buttonWriteMode2Report = new System.Windows.Forms.Button();
             this.buttonMode2Clear = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxMode2Ch3Result = new System.Windows.Forms.TextBox();
             this.textBoxMode2Ch0Result = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.textBoxMode2Ch2Result = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.textBoxMode2Ch1Result = new System.Windows.Forms.TextBox();
+            this.textBoxMode2Ch3Result = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.buttonCh4Max = new System.Windows.Forms.Button();
@@ -79,10 +79,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownCh0Setting = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownCh1Setting = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownCh2Setting = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownCh3Setting = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownCh4Setting = new System.Windows.Forms.NumericUpDown();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBoxCh4CurrentValue = new System.Windows.Forms.TextBox();
             this.textBoxCh3CurrentValue = new System.Windows.Forms.TextBox();
@@ -100,20 +100,20 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownPFCH0Error = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownPFCH1Error = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownPFCH2Error = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownPFCH3Error = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownPFCH4Error = new System.Windows.Forms.NumericUpDown();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownPFCH0Max = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownPFCH1Max = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownPFCH2Max = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownPFCH3Max = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownPFCH4Max = new System.Windows.Forms.NumericUpDown();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownPFCH0Min = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownPFCH1Min = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownPFCH2Min = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownPFCH3Min = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownPFCH4Min = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonADCSet = new System.Windows.Forms.Button();
             this.comboBoxSPS = new System.Windows.Forms.ComboBox();
@@ -158,27 +158,27 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.buttonRescan = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCh0Setting)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCh1Setting)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCh2Setting)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCh3Setting)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCh4Setting)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH0Error)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH1Error)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH2Error)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH3Error)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH4Error)).BeginInit();
             this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH0Max)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH1Max)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH2Max)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH3Max)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH4Max)).BeginInit();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH0Min)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH1Min)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH2Min)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH3Min)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH4Min)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownADCSamples)).BeginInit();
@@ -197,13 +197,13 @@
             this.comboBoxPorts.FormattingEnabled = true;
             this.comboBoxPorts.Location = new System.Drawing.Point(12, 12);
             this.comboBoxPorts.Name = "comboBoxPorts";
-            this.comboBoxPorts.Size = new System.Drawing.Size(86, 35);
+            this.comboBoxPorts.Size = new System.Drawing.Size(108, 35);
             this.comboBoxPorts.TabIndex = 0;
             // 
             // buttonConn
             // 
             this.buttonConn.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.buttonConn.Location = new System.Drawing.Point(104, 10);
+            this.buttonConn.Location = new System.Drawing.Point(126, 10);
             this.buttonConn.Name = "buttonConn";
             this.buttonConn.Size = new System.Drawing.Size(91, 38);
             this.buttonConn.TabIndex = 1;
@@ -222,15 +222,15 @@
             this.buttonMode1Clear.UseVisualStyleBackColor = true;
             this.buttonMode1Clear.Click += new System.EventHandler(this.buttonMode1Clear_Click);
             // 
-            // textBoxMode1Ch1Result
+            // textBoxMode1Ch3Result
             // 
-            this.textBoxMode1Ch1Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxMode1Ch1Result.Location = new System.Drawing.Point(340, 212);
-            this.textBoxMode1Ch1Result.Name = "textBoxMode1Ch1Result";
-            this.textBoxMode1Ch1Result.ReadOnly = true;
-            this.textBoxMode1Ch1Result.Size = new System.Drawing.Size(255, 53);
-            this.textBoxMode1Ch1Result.TabIndex = 7;
-            this.textBoxMode1Ch1Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxMode1Ch3Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBoxMode1Ch3Result.Location = new System.Drawing.Point(340, 212);
+            this.textBoxMode1Ch3Result.Name = "textBoxMode1Ch3Result";
+            this.textBoxMode1Ch3Result.ReadOnly = true;
+            this.textBoxMode1Ch3Result.Size = new System.Drawing.Size(255, 53);
+            this.textBoxMode1Ch3Result.TabIndex = 7;
+            this.textBoxMode1Ch3Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonMeasurementMode1
             // 
@@ -254,25 +254,25 @@
             this.buttonIndRun.UseVisualStyleBackColor = true;
             this.buttonIndRun.Click += new System.EventHandler(this.buttonIndRun_Click);
             // 
+            // textBoxMode1Ch2Result
+            // 
+            this.textBoxMode1Ch2Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBoxMode1Ch2Result.Location = new System.Drawing.Point(340, 152);
+            this.textBoxMode1Ch2Result.Name = "textBoxMode1Ch2Result";
+            this.textBoxMode1Ch2Result.ReadOnly = true;
+            this.textBoxMode1Ch2Result.Size = new System.Drawing.Size(255, 53);
+            this.textBoxMode1Ch2Result.TabIndex = 6;
+            this.textBoxMode1Ch2Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // textBoxMode1Ch0Result
             // 
             this.textBoxMode1Ch0Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxMode1Ch0Result.Location = new System.Drawing.Point(340, 152);
+            this.textBoxMode1Ch0Result.Location = new System.Drawing.Point(340, 24);
             this.textBoxMode1Ch0Result.Name = "textBoxMode1Ch0Result";
             this.textBoxMode1Ch0Result.ReadOnly = true;
             this.textBoxMode1Ch0Result.Size = new System.Drawing.Size(255, 53);
-            this.textBoxMode1Ch0Result.TabIndex = 6;
+            this.textBoxMode1Ch0Result.TabIndex = 4;
             this.textBoxMode1Ch0Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxMode1Ch3Result
-            // 
-            this.textBoxMode1Ch3Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxMode1Ch3Result.Location = new System.Drawing.Point(340, 24);
-            this.textBoxMode1Ch3Result.Name = "textBoxMode1Ch3Result";
-            this.textBoxMode1Ch3Result.ReadOnly = true;
-            this.textBoxMode1Ch3Result.Size = new System.Drawing.Size(255, 53);
-            this.textBoxMode1Ch3Result.TabIndex = 4;
-            this.textBoxMode1Ch3Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // checkBoxCh1
             // 
@@ -287,15 +287,15 @@
             this.checkBoxCh1.Text = "Ch 1 (Blue)";
             this.checkBoxCh1.UseVisualStyleBackColor = true;
             // 
-            // textBoxMode1Ch2Result
+            // textBoxMode1Ch1Result
             // 
-            this.textBoxMode1Ch2Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxMode1Ch2Result.Location = new System.Drawing.Point(340, 88);
-            this.textBoxMode1Ch2Result.Name = "textBoxMode1Ch2Result";
-            this.textBoxMode1Ch2Result.ReadOnly = true;
-            this.textBoxMode1Ch2Result.Size = new System.Drawing.Size(255, 53);
-            this.textBoxMode1Ch2Result.TabIndex = 5;
-            this.textBoxMode1Ch2Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxMode1Ch1Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBoxMode1Ch1Result.Location = new System.Drawing.Point(340, 88);
+            this.textBoxMode1Ch1Result.Name = "textBoxMode1Ch1Result";
+            this.textBoxMode1Ch1Result.ReadOnly = true;
+            this.textBoxMode1Ch1Result.Size = new System.Drawing.Size(255, 53);
+            this.textBoxMode1Ch1Result.TabIndex = 5;
+            this.textBoxMode1Ch1Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // checkBoxCh2
             // 
@@ -379,25 +379,25 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Ch 4 (Orange)";
             // 
-            // textBoxMode2Ch3Result
-            // 
-            this.textBoxMode2Ch3Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxMode2Ch3Result.Location = new System.Drawing.Point(333, 61);
-            this.textBoxMode2Ch3Result.Name = "textBoxMode2Ch3Result";
-            this.textBoxMode2Ch3Result.ReadOnly = true;
-            this.textBoxMode2Ch3Result.Size = new System.Drawing.Size(257, 53);
-            this.textBoxMode2Ch3Result.TabIndex = 8;
-            this.textBoxMode2Ch3Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // textBoxMode2Ch0Result
             // 
             this.textBoxMode2Ch0Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxMode2Ch0Result.Location = new System.Drawing.Point(333, 179);
+            this.textBoxMode2Ch0Result.Location = new System.Drawing.Point(333, 61);
             this.textBoxMode2Ch0Result.Name = "textBoxMode2Ch0Result";
             this.textBoxMode2Ch0Result.ReadOnly = true;
             this.textBoxMode2Ch0Result.Size = new System.Drawing.Size(257, 53);
-            this.textBoxMode2Ch0Result.TabIndex = 10;
+            this.textBoxMode2Ch0Result.TabIndex = 8;
             this.textBoxMode2Ch0Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxMode2Ch2Result
+            // 
+            this.textBoxMode2Ch2Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBoxMode2Ch2Result.Location = new System.Drawing.Point(333, 179);
+            this.textBoxMode2Ch2Result.Name = "textBoxMode2Ch2Result";
+            this.textBoxMode2Ch2Result.ReadOnly = true;
+            this.textBoxMode2Ch2Result.Size = new System.Drawing.Size(257, 53);
+            this.textBoxMode2Ch2Result.TabIndex = 10;
+            this.textBoxMode2Ch2Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -409,25 +409,25 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Ch 3 (Red)";
             // 
-            // textBoxMode2Ch2Result
-            // 
-            this.textBoxMode2Ch2Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxMode2Ch2Result.Location = new System.Drawing.Point(333, 120);
-            this.textBoxMode2Ch2Result.Name = "textBoxMode2Ch2Result";
-            this.textBoxMode2Ch2Result.ReadOnly = true;
-            this.textBoxMode2Ch2Result.Size = new System.Drawing.Size(257, 53);
-            this.textBoxMode2Ch2Result.TabIndex = 9;
-            this.textBoxMode2Ch2Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // textBoxMode2Ch1Result
             // 
             this.textBoxMode2Ch1Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxMode2Ch1Result.Location = new System.Drawing.Point(333, 238);
+            this.textBoxMode2Ch1Result.Location = new System.Drawing.Point(333, 120);
             this.textBoxMode2Ch1Result.Name = "textBoxMode2Ch1Result";
             this.textBoxMode2Ch1Result.ReadOnly = true;
             this.textBoxMode2Ch1Result.Size = new System.Drawing.Size(257, 53);
-            this.textBoxMode2Ch1Result.TabIndex = 11;
+            this.textBoxMode2Ch1Result.TabIndex = 9;
             this.textBoxMode2Ch1Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxMode2Ch3Result
+            // 
+            this.textBoxMode2Ch3Result.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBoxMode2Ch3Result.Location = new System.Drawing.Point(333, 238);
+            this.textBoxMode2Ch3Result.Name = "textBoxMode2Ch3Result";
+            this.textBoxMode2Ch3Result.ReadOnly = true;
+            this.textBoxMode2Ch3Result.Size = new System.Drawing.Size(257, 53);
+            this.textBoxMode2Ch3Result.TabIndex = 11;
+            this.textBoxMode2Ch3Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -717,10 +717,10 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.numericUpDownCh0Setting);
             this.groupBox5.Controls.Add(this.numericUpDownCh1Setting);
             this.groupBox5.Controls.Add(this.numericUpDownCh2Setting);
             this.groupBox5.Controls.Add(this.numericUpDownCh3Setting);
-            this.groupBox5.Controls.Add(this.numericUpDownCh4Setting);
             this.groupBox5.Location = new System.Drawing.Point(236, 19);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(84, 119);
@@ -728,57 +728,57 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "설정값";
             // 
+            // numericUpDownCh0Setting
+            // 
+            this.numericUpDownCh0Setting.Location = new System.Drawing.Point(5, 18);
+            this.numericUpDownCh0Setting.Maximum = new decimal(new int[] {
+            2047,
+            0,
+            0,
+            0});
+            this.numericUpDownCh0Setting.Name = "numericUpDownCh0Setting";
+            this.numericUpDownCh0Setting.Size = new System.Drawing.Size(71, 21);
+            this.numericUpDownCh0Setting.TabIndex = 8;
+            this.numericUpDownCh0Setting.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // numericUpDownCh1Setting
             // 
-            this.numericUpDownCh1Setting.Location = new System.Drawing.Point(5, 18);
+            this.numericUpDownCh1Setting.Location = new System.Drawing.Point(5, 41);
             this.numericUpDownCh1Setting.Maximum = new decimal(new int[] {
-            1500,
+            2047,
             0,
             0,
             0});
             this.numericUpDownCh1Setting.Name = "numericUpDownCh1Setting";
             this.numericUpDownCh1Setting.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownCh1Setting.TabIndex = 8;
+            this.numericUpDownCh1Setting.TabIndex = 9;
             this.numericUpDownCh1Setting.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownCh2Setting
             // 
-            this.numericUpDownCh2Setting.Location = new System.Drawing.Point(5, 41);
+            this.numericUpDownCh2Setting.Location = new System.Drawing.Point(5, 64);
             this.numericUpDownCh2Setting.Maximum = new decimal(new int[] {
-            1500,
+            2047,
             0,
             0,
             0});
             this.numericUpDownCh2Setting.Name = "numericUpDownCh2Setting";
             this.numericUpDownCh2Setting.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownCh2Setting.TabIndex = 9;
+            this.numericUpDownCh2Setting.TabIndex = 10;
             this.numericUpDownCh2Setting.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownCh3Setting
             // 
-            this.numericUpDownCh3Setting.Location = new System.Drawing.Point(5, 64);
+            this.numericUpDownCh3Setting.Location = new System.Drawing.Point(5, 87);
             this.numericUpDownCh3Setting.Maximum = new decimal(new int[] {
-            1500,
+            2047,
             0,
             0,
             0});
             this.numericUpDownCh3Setting.Name = "numericUpDownCh3Setting";
             this.numericUpDownCh3Setting.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownCh3Setting.TabIndex = 10;
+            this.numericUpDownCh3Setting.TabIndex = 11;
             this.numericUpDownCh3Setting.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // numericUpDownCh4Setting
-            // 
-            this.numericUpDownCh4Setting.Location = new System.Drawing.Point(5, 87);
-            this.numericUpDownCh4Setting.Maximum = new decimal(new int[] {
-            1500,
-            0,
-            0,
-            0});
-            this.numericUpDownCh4Setting.Name = "numericUpDownCh4Setting";
-            this.numericUpDownCh4Setting.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownCh4Setting.TabIndex = 11;
-            this.numericUpDownCh4Setting.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox4
             // 
@@ -939,16 +939,35 @@
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.numericUpDownPFCH0Error);
             this.groupBox10.Controls.Add(this.numericUpDownPFCH1Error);
             this.groupBox10.Controls.Add(this.numericUpDownPFCH2Error);
             this.groupBox10.Controls.Add(this.numericUpDownPFCH3Error);
-            this.groupBox10.Controls.Add(this.numericUpDownPFCH4Error);
             this.groupBox10.Location = new System.Drawing.Point(240, 20);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(84, 119);
             this.groupBox10.TabIndex = 17;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Error";
+            // 
+            // numericUpDownPFCH0Error
+            // 
+            this.numericUpDownPFCH0Error.DecimalPlaces = 1;
+            this.numericUpDownPFCH0Error.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericUpDownPFCH0Error.Location = new System.Drawing.Point(5, 18);
+            this.numericUpDownPFCH0Error.Maximum = new decimal(new int[] {
+            1500,
+            0,
+            0,
+            0});
+            this.numericUpDownPFCH0Error.Name = "numericUpDownPFCH0Error";
+            this.numericUpDownPFCH0Error.Size = new System.Drawing.Size(71, 21);
+            this.numericUpDownPFCH0Error.TabIndex = 8;
+            this.numericUpDownPFCH0Error.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownPFCH1Error
             // 
@@ -958,7 +977,7 @@
             0,
             0,
             65536});
-            this.numericUpDownPFCH1Error.Location = new System.Drawing.Point(5, 18);
+            this.numericUpDownPFCH1Error.Location = new System.Drawing.Point(5, 41);
             this.numericUpDownPFCH1Error.Maximum = new decimal(new int[] {
             1500,
             0,
@@ -966,7 +985,7 @@
             0});
             this.numericUpDownPFCH1Error.Name = "numericUpDownPFCH1Error";
             this.numericUpDownPFCH1Error.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH1Error.TabIndex = 8;
+            this.numericUpDownPFCH1Error.TabIndex = 9;
             this.numericUpDownPFCH1Error.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownPFCH2Error
@@ -977,7 +996,7 @@
             0,
             0,
             65536});
-            this.numericUpDownPFCH2Error.Location = new System.Drawing.Point(5, 41);
+            this.numericUpDownPFCH2Error.Location = new System.Drawing.Point(5, 64);
             this.numericUpDownPFCH2Error.Maximum = new decimal(new int[] {
             1500,
             0,
@@ -985,7 +1004,7 @@
             0});
             this.numericUpDownPFCH2Error.Name = "numericUpDownPFCH2Error";
             this.numericUpDownPFCH2Error.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH2Error.TabIndex = 9;
+            this.numericUpDownPFCH2Error.TabIndex = 10;
             this.numericUpDownPFCH2Error.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownPFCH3Error
@@ -996,7 +1015,7 @@
             0,
             0,
             65536});
-            this.numericUpDownPFCH3Error.Location = new System.Drawing.Point(5, 64);
+            this.numericUpDownPFCH3Error.Location = new System.Drawing.Point(5, 87);
             this.numericUpDownPFCH3Error.Maximum = new decimal(new int[] {
             1500,
             0,
@@ -1004,40 +1023,45 @@
             0});
             this.numericUpDownPFCH3Error.Name = "numericUpDownPFCH3Error";
             this.numericUpDownPFCH3Error.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH3Error.TabIndex = 10;
+            this.numericUpDownPFCH3Error.TabIndex = 11;
             this.numericUpDownPFCH3Error.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // numericUpDownPFCH4Error
-            // 
-            this.numericUpDownPFCH4Error.DecimalPlaces = 1;
-            this.numericUpDownPFCH4Error.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.numericUpDownPFCH4Error.Location = new System.Drawing.Point(5, 87);
-            this.numericUpDownPFCH4Error.Maximum = new decimal(new int[] {
-            1500,
-            0,
-            0,
-            0});
-            this.numericUpDownPFCH4Error.Name = "numericUpDownPFCH4Error";
-            this.numericUpDownPFCH4Error.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH4Error.TabIndex = 11;
-            this.numericUpDownPFCH4Error.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.numericUpDownPFCH0Max);
             this.groupBox9.Controls.Add(this.numericUpDownPFCH1Max);
             this.groupBox9.Controls.Add(this.numericUpDownPFCH2Max);
             this.groupBox9.Controls.Add(this.numericUpDownPFCH3Max);
-            this.groupBox9.Controls.Add(this.numericUpDownPFCH4Max);
             this.groupBox9.Location = new System.Drawing.Point(150, 20);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(84, 119);
             this.groupBox9.TabIndex = 16;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Max";
+            // 
+            // numericUpDownPFCH0Max
+            // 
+            this.numericUpDownPFCH0Max.DecimalPlaces = 1;
+            this.numericUpDownPFCH0Max.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericUpDownPFCH0Max.Location = new System.Drawing.Point(5, 18);
+            this.numericUpDownPFCH0Max.Maximum = new decimal(new int[] {
+            1500,
+            0,
+            0,
+            0});
+            this.numericUpDownPFCH0Max.Minimum = new decimal(new int[] {
+            1500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPFCH0Max.Name = "numericUpDownPFCH0Max";
+            this.numericUpDownPFCH0Max.Size = new System.Drawing.Size(71, 21);
+            this.numericUpDownPFCH0Max.TabIndex = 8;
+            this.numericUpDownPFCH0Max.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownPFCH1Max
             // 
@@ -1047,7 +1071,7 @@
             0,
             0,
             65536});
-            this.numericUpDownPFCH1Max.Location = new System.Drawing.Point(5, 18);
+            this.numericUpDownPFCH1Max.Location = new System.Drawing.Point(5, 41);
             this.numericUpDownPFCH1Max.Maximum = new decimal(new int[] {
             1500,
             0,
@@ -1060,7 +1084,7 @@
             -2147483648});
             this.numericUpDownPFCH1Max.Name = "numericUpDownPFCH1Max";
             this.numericUpDownPFCH1Max.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH1Max.TabIndex = 8;
+            this.numericUpDownPFCH1Max.TabIndex = 9;
             this.numericUpDownPFCH1Max.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownPFCH2Max
@@ -1071,7 +1095,7 @@
             0,
             0,
             65536});
-            this.numericUpDownPFCH2Max.Location = new System.Drawing.Point(5, 41);
+            this.numericUpDownPFCH2Max.Location = new System.Drawing.Point(5, 64);
             this.numericUpDownPFCH2Max.Maximum = new decimal(new int[] {
             1500,
             0,
@@ -1084,7 +1108,7 @@
             -2147483648});
             this.numericUpDownPFCH2Max.Name = "numericUpDownPFCH2Max";
             this.numericUpDownPFCH2Max.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH2Max.TabIndex = 9;
+            this.numericUpDownPFCH2Max.TabIndex = 10;
             this.numericUpDownPFCH2Max.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownPFCH3Max
@@ -1095,7 +1119,7 @@
             0,
             0,
             65536});
-            this.numericUpDownPFCH3Max.Location = new System.Drawing.Point(5, 64);
+            this.numericUpDownPFCH3Max.Location = new System.Drawing.Point(5, 87);
             this.numericUpDownPFCH3Max.Maximum = new decimal(new int[] {
             1500,
             0,
@@ -1108,45 +1132,45 @@
             -2147483648});
             this.numericUpDownPFCH3Max.Name = "numericUpDownPFCH3Max";
             this.numericUpDownPFCH3Max.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH3Max.TabIndex = 10;
+            this.numericUpDownPFCH3Max.TabIndex = 11;
             this.numericUpDownPFCH3Max.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // numericUpDownPFCH4Max
-            // 
-            this.numericUpDownPFCH4Max.DecimalPlaces = 1;
-            this.numericUpDownPFCH4Max.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.numericUpDownPFCH4Max.Location = new System.Drawing.Point(5, 87);
-            this.numericUpDownPFCH4Max.Maximum = new decimal(new int[] {
-            1500,
-            0,
-            0,
-            0});
-            this.numericUpDownPFCH4Max.Minimum = new decimal(new int[] {
-            1500,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownPFCH4Max.Name = "numericUpDownPFCH4Max";
-            this.numericUpDownPFCH4Max.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH4Max.TabIndex = 11;
-            this.numericUpDownPFCH4Max.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.numericUpDownPFCH0Min);
             this.groupBox8.Controls.Add(this.numericUpDownPFCH1Min);
             this.groupBox8.Controls.Add(this.numericUpDownPFCH2Min);
             this.groupBox8.Controls.Add(this.numericUpDownPFCH3Min);
-            this.groupBox8.Controls.Add(this.numericUpDownPFCH4Min);
             this.groupBox8.Location = new System.Drawing.Point(62, 20);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(84, 119);
             this.groupBox8.TabIndex = 16;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Min";
+            // 
+            // numericUpDownPFCH0Min
+            // 
+            this.numericUpDownPFCH0Min.DecimalPlaces = 1;
+            this.numericUpDownPFCH0Min.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericUpDownPFCH0Min.Location = new System.Drawing.Point(5, 18);
+            this.numericUpDownPFCH0Min.Maximum = new decimal(new int[] {
+            1500,
+            0,
+            0,
+            0});
+            this.numericUpDownPFCH0Min.Minimum = new decimal(new int[] {
+            1500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPFCH0Min.Name = "numericUpDownPFCH0Min";
+            this.numericUpDownPFCH0Min.Size = new System.Drawing.Size(71, 21);
+            this.numericUpDownPFCH0Min.TabIndex = 8;
+            this.numericUpDownPFCH0Min.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownPFCH1Min
             // 
@@ -1156,7 +1180,7 @@
             0,
             0,
             65536});
-            this.numericUpDownPFCH1Min.Location = new System.Drawing.Point(5, 18);
+            this.numericUpDownPFCH1Min.Location = new System.Drawing.Point(5, 41);
             this.numericUpDownPFCH1Min.Maximum = new decimal(new int[] {
             1500,
             0,
@@ -1169,7 +1193,7 @@
             -2147483648});
             this.numericUpDownPFCH1Min.Name = "numericUpDownPFCH1Min";
             this.numericUpDownPFCH1Min.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH1Min.TabIndex = 8;
+            this.numericUpDownPFCH1Min.TabIndex = 9;
             this.numericUpDownPFCH1Min.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownPFCH2Min
@@ -1180,7 +1204,7 @@
             0,
             0,
             65536});
-            this.numericUpDownPFCH2Min.Location = new System.Drawing.Point(5, 41);
+            this.numericUpDownPFCH2Min.Location = new System.Drawing.Point(5, 64);
             this.numericUpDownPFCH2Min.Maximum = new decimal(new int[] {
             1500,
             0,
@@ -1193,7 +1217,7 @@
             -2147483648});
             this.numericUpDownPFCH2Min.Name = "numericUpDownPFCH2Min";
             this.numericUpDownPFCH2Min.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH2Min.TabIndex = 9;
+            this.numericUpDownPFCH2Min.TabIndex = 10;
             this.numericUpDownPFCH2Min.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // numericUpDownPFCH3Min
@@ -1204,7 +1228,7 @@
             0,
             0,
             65536});
-            this.numericUpDownPFCH3Min.Location = new System.Drawing.Point(5, 64);
+            this.numericUpDownPFCH3Min.Location = new System.Drawing.Point(5, 87);
             this.numericUpDownPFCH3Min.Maximum = new decimal(new int[] {
             1500,
             0,
@@ -1217,32 +1241,8 @@
             -2147483648});
             this.numericUpDownPFCH3Min.Name = "numericUpDownPFCH3Min";
             this.numericUpDownPFCH3Min.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH3Min.TabIndex = 10;
+            this.numericUpDownPFCH3Min.TabIndex = 11;
             this.numericUpDownPFCH3Min.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // numericUpDownPFCH4Min
-            // 
-            this.numericUpDownPFCH4Min.DecimalPlaces = 1;
-            this.numericUpDownPFCH4Min.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.numericUpDownPFCH4Min.Location = new System.Drawing.Point(5, 87);
-            this.numericUpDownPFCH4Min.Maximum = new decimal(new int[] {
-            1500,
-            0,
-            0,
-            0});
-            this.numericUpDownPFCH4Min.Minimum = new decimal(new int[] {
-            1500,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownPFCH4Min.Name = "numericUpDownPFCH4Min";
-            this.numericUpDownPFCH4Min.Size = new System.Drawing.Size(71, 21);
-            this.numericUpDownPFCH4Min.TabIndex = 11;
-            this.numericUpDownPFCH4Min.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox2
             // 
@@ -1492,13 +1492,13 @@
             this.tabPage1.Controls.Add(this.label33);
             this.tabPage1.Controls.Add(this.label32);
             this.tabPage1.Controls.Add(this.buttonMode1Clear);
-            this.tabPage1.Controls.Add(this.textBoxMode1Ch3Result);
+            this.tabPage1.Controls.Add(this.textBoxMode1Ch0Result);
             this.tabPage1.Controls.Add(this.buttonMeasurementMode1);
-            this.tabPage1.Controls.Add(this.textBoxMode1Ch1Result);
+            this.tabPage1.Controls.Add(this.textBoxMode1Ch3Result);
             this.tabPage1.Controls.Add(this.checkBoxCh1);
             this.tabPage1.Controls.Add(this.checkBoxCh4);
+            this.tabPage1.Controls.Add(this.textBoxMode1Ch1Result);
             this.tabPage1.Controls.Add(this.textBoxMode1Ch2Result);
-            this.tabPage1.Controls.Add(this.textBoxMode1Ch0Result);
             this.tabPage1.Controls.Add(this.checkBoxCh3);
             this.tabPage1.Controls.Add(this.checkBoxCh2);
             this.tabPage1.Controls.Add(this.buttonIndRun);
@@ -1560,15 +1560,15 @@
             this.tabPage2.Controls.Add(this.label39);
             this.tabPage2.Controls.Add(this.buttonMeasurementMode2);
             this.tabPage2.Controls.Add(this.buttonWriteMode2Report);
-            this.tabPage2.Controls.Add(this.textBoxMode2Ch3Result);
+            this.tabPage2.Controls.Add(this.textBoxMode2Ch0Result);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.buttonMode2Clear);
-            this.tabPage2.Controls.Add(this.textBoxMode2Ch0Result);
-            this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.textBoxMode2Ch2Result);
-            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.textBoxMode2Ch1Result);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.textBoxMode2Ch3Result);
             this.tabPage2.Location = new System.Drawing.Point(4, 30);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1579,11 +1579,11 @@
             // 
             // textBoxMode2Time
             // 
-            this.textBoxMode2Time.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxMode2Time.Location = new System.Drawing.Point(333, 10);
+            this.textBoxMode2Time.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBoxMode2Time.Location = new System.Drawing.Point(333, 14);
             this.textBoxMode2Time.Name = "textBoxMode2Time";
             this.textBoxMode2Time.ReadOnly = true;
-            this.textBoxMode2Time.Size = new System.Drawing.Size(336, 44);
+            this.textBoxMode2Time.Size = new System.Drawing.Size(336, 38);
             this.textBoxMode2Time.TabIndex = 24;
             this.textBoxMode2Time.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1751,7 +1751,7 @@
             // buttonRescan
             // 
             this.buttonRescan.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.buttonRescan.Location = new System.Drawing.Point(201, 10);
+            this.buttonRescan.Location = new System.Drawing.Point(223, 10);
             this.buttonRescan.Name = "buttonRescan";
             this.buttonRescan.Size = new System.Drawing.Size(106, 38);
             this.buttonRescan.TabIndex = 25;
@@ -1775,29 +1775,29 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCh0Setting)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCh1Setting)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCh2Setting)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCh3Setting)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCh4Setting)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH0Error)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH1Error)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH2Error)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH3Error)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH4Error)).EndInit();
             this.groupBox9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH0Max)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH1Max)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH2Max)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH3Max)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH4Max)).EndInit();
             this.groupBox8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH0Min)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH1Min)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH2Min)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH3Min)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPFCH4Min)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -1828,14 +1828,14 @@
         private System.Windows.Forms.CheckBox checkBoxCh2;
         private System.Windows.Forms.CheckBox checkBoxCh1;
         private System.Windows.Forms.Button buttonIndRun;
+        private System.Windows.Forms.TextBox textBoxMode1Ch3Result;
+        private System.Windows.Forms.TextBox textBoxMode1Ch2Result;
         private System.Windows.Forms.TextBox textBoxMode1Ch1Result;
         private System.Windows.Forms.TextBox textBoxMode1Ch0Result;
-        private System.Windows.Forms.TextBox textBoxMode1Ch2Result;
-        private System.Windows.Forms.TextBox textBoxMode1Ch3Result;
-        private System.Windows.Forms.NumericUpDown numericUpDownCh4Setting;
         private System.Windows.Forms.NumericUpDown numericUpDownCh3Setting;
         private System.Windows.Forms.NumericUpDown numericUpDownCh2Setting;
         private System.Windows.Forms.NumericUpDown numericUpDownCh1Setting;
+        private System.Windows.Forms.NumericUpDown numericUpDownCh0Setting;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -1847,10 +1847,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxMode2Ch3Result;
+        private System.Windows.Forms.TextBox textBoxMode2Ch2Result;
         private System.Windows.Forms.TextBox textBoxMode2Ch1Result;
         private System.Windows.Forms.TextBox textBoxMode2Ch0Result;
-        private System.Windows.Forms.TextBox textBoxMode2Ch2Result;
-        private System.Windows.Forms.TextBox textBoxMode2Ch3Result;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox textBoxCh4CurrentValue;
@@ -1901,20 +1901,20 @@
         private System.Windows.Forms.Button buttonADCSet;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.NumericUpDown numericUpDownPFCH0Max;
         private System.Windows.Forms.NumericUpDown numericUpDownPFCH1Max;
         private System.Windows.Forms.NumericUpDown numericUpDownPFCH2Max;
         private System.Windows.Forms.NumericUpDown numericUpDownPFCH3Max;
-        private System.Windows.Forms.NumericUpDown numericUpDownPFCH4Max;
         private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.NumericUpDown numericUpDownPFCH0Min;
         private System.Windows.Forms.NumericUpDown numericUpDownPFCH1Min;
         private System.Windows.Forms.NumericUpDown numericUpDownPFCH2Min;
         private System.Windows.Forms.NumericUpDown numericUpDownPFCH3Min;
-        private System.Windows.Forms.NumericUpDown numericUpDownPFCH4Min;
         private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.NumericUpDown numericUpDownPFCH0Error;
         private System.Windows.Forms.NumericUpDown numericUpDownPFCH1Error;
         private System.Windows.Forms.NumericUpDown numericUpDownPFCH2Error;
         private System.Windows.Forms.NumericUpDown numericUpDownPFCH3Error;
-        private System.Windows.Forms.NumericUpDown numericUpDownPFCH4Error;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
